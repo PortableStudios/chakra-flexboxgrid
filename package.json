@@ -1,0 +1,71 @@
+{
+  "name": "@portablestudios/chakra-flexboxgrid",
+  "version": "0.1.0",
+  "description": "Flexbox Grid using Chakra UI components",
+  "author": "Darcy Glennen <darcy@portable.com.au>",
+  "license": "MIT",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "/lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PortableStudios/chakra-flexboxgrid"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "prebuild": "rimraf ./lib",
+    "build": "tsc -p .",
+    "lint": "eslint . --fix --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test & yarn typecheck & lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@chakra-ui/react": "^1.0.1",
+    "@chakra-ui/utils": "^1.0.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/react": "^6.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "framer-motion": "^2.9.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=1.0.0",
+    "@chakra-ui/utils": ">=1.0.0",
+    "react": "16.x || 17.x"
+  }
+}

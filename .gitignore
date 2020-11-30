@@ -6,6 +6,15 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# IntelliJ
+.idea
+
+# Build output
+lib
+
+# Storybook output
+storybook-static
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
