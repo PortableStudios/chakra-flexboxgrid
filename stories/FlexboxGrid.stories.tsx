@@ -14,9 +14,9 @@ type Args = React.ComponentProps<typeof FlexboxGrid>;
 
 // An example grid config to use for the stories
 const exampleConfig = {
-  columns: { base: 4, md: 4, lg: 12 },
-  gutter: { base: 2, md: 4, lg: 6 },
-  margin: { base: 4, md: 8, lg: 24 },
+  columns: { base: 4, lg: 12 },
+  gutter: { base: 4, lg: 6 },
+  margin: { base: 4, md: 8, lg: 24, xl: 40 },
 };
 
 const Block: React.FC<{ num: number }> = ({ num }) => {
@@ -146,6 +146,12 @@ export const OverhangingRow: Story<Args> = (args) => {
         </FlexboxGridRow>
         <FlexboxGridRow marginTop={4}>
           <FlexboxGridItem colWidth={{ base: 4, lg: 4 }}>
+            <Block num={2} />
+          </FlexboxGridItem>
+          <FlexboxGridItem
+            colWidth={{ base: 4, lg: 4 }}
+            marginTop={{ base: 4, lg: 0 }}
+          >
             <Block num={3} />
           </FlexboxGridItem>
           <FlexboxGridItem
@@ -153,12 +159,6 @@ export const OverhangingRow: Story<Args> = (args) => {
             marginTop={{ base: 4, lg: 0 }}
           >
             <Block num={4} />
-          </FlexboxGridItem>
-          <FlexboxGridItem
-            colWidth={{ base: 4, lg: 4 }}
-            marginTop={{ base: 4, lg: 0 }}
-          >
-            <Block num={5} />
           </FlexboxGridItem>
         </FlexboxGridRow>
       </FlexboxGrid>
