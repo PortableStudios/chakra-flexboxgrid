@@ -3,7 +3,7 @@ import { rem } from 'polished';
 import { Box, Flex } from '@chakra-ui/react';
 import type { Story, Meta } from '@storybook/react';
 
-import { FlexboxGrid, FlexboxGridItem, FlexboxGridRow } from '../src';
+import { FlexboxGrid, FlexboxGridItem, FlexboxGridRow } from '..';
 
 export default {
   title: 'FlexboxGrid/Examples',
