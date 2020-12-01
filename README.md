@@ -27,6 +27,21 @@ npm install @portablestudios/chakra-flexboxgrid
 
 See our [Storybook file](./stories/FlexboxGrid.stories.tsx) for usage examples.
 
+## Usage with figma2theme
+
+If you are using our [`figma2theme`](https://github.com/PortableStudios/figma2theme) tool and the Figma project includes
+layout grid styles, the tool will generate a `grids.tsx` file which will contain "grid config" objects corresponding to each style.
+
+These config objects can be passed directly to the `FlexboxGrid` component. For example, to use the "page" grid layout:
+
+```
+import * as gridConfigs from '@/theme/_generated/grids';
+...
+<FlexboxGrid config={gridConfigs.page}>
+  ...
+</FlexboxGrid>
+```
+
 # Development
 
 While developing, use Storybook to test the components:
