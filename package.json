@@ -4,14 +4,14 @@
   "description": "Flexbox Grid using Chakra UI components",
   "author": "Darcy Glennen <darcy@portable.com.au>",
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/src/index.d.ts",
-  "typings": "dist/types/src/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/types/src/index.d.ts",
+  "typings": "lib/types/src/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
+      "require": "./lib/cjs/index.js",
+      "default": "./lib/esm/index.js"
     }
   },
   "files": [
