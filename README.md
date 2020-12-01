@@ -25,7 +25,7 @@ npm install @portablestudios/chakra-flexboxgrid
 
 # Usage
 
-See our [Storybook file](./stories/FlexboxGrid.stories.tsx) for usage examples.
+See our [Storybook](https://chakra-flexboxgrid.netlify.app/) and the corresponding [story file](./stories/FlexboxGrid.stories.tsx) for usage examples.
 
 ## Usage with figma2theme
 
