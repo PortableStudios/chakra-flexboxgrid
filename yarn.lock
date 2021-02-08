@@ -2309,7 +2309,7 @@
     "@chakra-ui/hooks" "1.1.3"
     "@chakra-ui/utils" "1.1.0"
 
-"@chakra-ui/utils@1.1.0", "@chakra-ui/utils@^1.1.0":
+"@chakra-ui/utils@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.1.0.tgz#e006d17ffc1b09c2daa08f94fbc58766c4329e76"
   integrity sha512-QiX6HqQpv+oE4lRaPhDYRhrYI2ijAsNDpKhZeOeUh6hBXWIayzMB62iN0QANeMqynPz413TU5RR2c+WGwyax6g==
@@ -2319,6 +2319,16 @@
     css-box-model "1.2.1"
     lodash.mergewith "4.6.2"
     object-assign "4.1.1"
+
+"@chakra-ui/utils@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.2.0.tgz#9385950e91455ecf480eb52bca268d3a5f8c9d6d"
+  integrity sha512-oMTX8BX1+MUf+iYUafFm9tNfwa3m1cqzMcE/5iQFmNcqKlZmuADnVL28Yw7jhoeouIjANaGY+f51qj9zHgDn9Q==
+  dependencies:
+    "@types/lodash.mergewith" "4.6.6"
+    "@types/object-assign" "4.0.30"
+    css-box-model "1.2.1"
+    lodash.mergewith "4.6.2"
 
 "@chakra-ui/visually-hidden@1.0.3":
   version "1.0.3"
