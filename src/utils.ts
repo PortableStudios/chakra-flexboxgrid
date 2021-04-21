@@ -5,7 +5,7 @@ import type { ResponsiveValue } from '@chakra-ui/react';
 // Take a Chakra UI responsive prop and calculate what the value should be for each breakpoint in the theme
 export const getResponsiveValues = <T>(
   values: ResponsiveValue<T>,
-  breakpoints: Breakpoints
+  breakpoints: Breakpoints<unknown>
 ) => {
   const breakpointNames = Object.keys(breakpoints).filter(isCustomBreakpoint);
 
