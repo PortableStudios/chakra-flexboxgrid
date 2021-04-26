@@ -55,7 +55,7 @@
     "@emotion/styled": "^11.3.0",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
-    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.8",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
