@@ -1,6 +1,6 @@
 {
   "name": "@portablestudios/chakra-flexboxgrid",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Flexbox Grid using Chakra UI components",
   "author": "Darcy Glennen <darcy@portable.com.au>",
   "license": "MIT",
